@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zipjoong - Link In Bio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Pretendard-like Noto Sans KR for clean Korean text) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        /* 스크롤바 숨기기 (깔끔한 모바일 뷰) */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 flex justify-center min-h-screen">
+
+    <!-- 모바일 컨테이너 (최대 너비 480px, 중앙 정렬) -->
+    <div class="w-full max-w-[480px] bg-[#f3f4f6] min-h-screen shadow-2xl relative flex flex-col">
+        
+        <!-- 상단 프로필 섹션 -->
+        <header class="pt-16 pb-8 px-6 text-center">
+            <!-- 프로필 이미지 -->
+            <div class="relative inline-block mb-4 group cursor-pointer">
+                <div class="w-[100px] h-[100px] rounded-full overflow-hidden border-4 border-white shadow-md mx-auto transition-transform duration-300 group-hover:scale-105">
+                    <img src="./images/zipjoong.png?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                         alt="Profile" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="absolute bottom-0 right-0 bg-blue-500 text-white text-xs p-1.5 rounded-full border-2 border-white shadow-sm">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+
+            <!-- 텍스트 정보 -->
+            <h1 class="text-xl font-bold text-gray-800 mb-2">집중 (Zipjoong)</h1>
+            <p class="text-sm text-gray-500 font-medium leading-relaxed mb-6">
+                🏠 집중-집에 집중하자!<br>
+                📍 25년차 부동산 전문가<br>
+                👇친절하게 상담해드립니다👇
+            </p>
+
+            <!-- 소셜 미디어 아이콘 -->
+            <!-- <div class="flex justify-center gap-5">
+                <a href="#" class="text-gray-400 hover:text-pink-600 transition-colors transform hover:scale-110">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-red-600 transition-colors transform hover:scale-110">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-black transition-colors transform hover:scale-110">
+                    <i class="fa-brands fa-x-twitter text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-green-500 transition-colors transform hover:scale-110">
+                    <i class="fas fa-comment text-2xl"></i>
+                </a>
+            </div> -->
+        </header>
+
+        <!-- 링크 리스트 섹션 -->
+        <main class="flex-1 px-5 pb-10 space-y-4">
+            
+            <!-- 더 트루엘 마곡 -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDLitNsZ75yQj82MllDi_Pl6IZ0AhgIVDzkZtJaIrPmDcKYw/viewform" class="block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transform hover:-translate-y-1 transition-all duration-300 group">
+                <div class="flex items-center p-1">
+                    <div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 ml-1">
+                        <img src="./images/the_truel.png?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                             alt="Item" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="flex-1 px-4 py-2">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-red-100 text-red-500 text-[10px] font-bold px-2 py-0.5 rounded-full">HOT</span>
+                        </div>
+                        <h3 class="font-bold text-gray-800 text-sm">더 트루엘 마곡 HQ</h3>
+                        <!-- <p class="text-xs text-gray-400 mt-0.5">한정 수량 놓치지 마세요!</p> -->
+                    </div>
+                    <div class="pr-4 text-gray-300">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </a>
+            <!-- 르웨스트 -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScPLIu5ZRZrmas-ST5kgQwfv8t-m1VEwiolAIUg5JwYSbEs7Q/viewform" class="block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transform hover:-translate-y-1 transition-all duration-300 group">
+                <div class="flex items-center p-1">
+                    <div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 ml-1">
+                        <img src="./images/rewest.png?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                             alt="Item" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="flex-1 px-4 py-2">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-red-100 text-red-500 text-[10px] font-bold px-2 py-0.5 rounded-full">HOT</span>
+                        </div>
+                        <h3 class="font-bold text-gray-800 text-sm">마곡 롯데 르웨스트</h3>
+                        <!-- <p class="text-xs text-gray-400 mt-0.5">한정 수량 놓치지 마세요!</p> -->
+                    </div>
+                    <div class="pr-4 text-gray-300">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 일반 버튼형 링크 1 -->
+            <!-- <a href="#" class="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm hover:shadow-md transform hover:-translate-y-1 transition-all duration-300 group">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 group-hover:bg-yellow-200 transition-colors">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="font-bold text-gray-700 text-sm">이달의 추천 아이템</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-300 group-hover:text-gray-500 transition-colors"></i>
+            </a> -->
+
+            <!-- 일반 버튼형 링크 2 -->
+            <!-- <a href="#" class="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm hover:shadow-md transform hover:-translate-y-1 transition-all duration-300 group">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 group-hover:bg-purple-200 transition-colors">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span class="font-bold text-gray-700 text-sm">입점 및 제휴 문의하기</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-300 group-hover:text-gray-500 transition-colors"></i>
+            </a> -->
+
+            <!-- 일반 버튼형 링크 3 -->
+            <!-- <a href="#" class="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm hover:shadow-md transform hover:-translate-y-1 transition-all duration-300 group">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-200 transition-colors">
+                        <i class="fas fa-question"></i>
+                    </div>
+                    <span class="font-bold text-gray-700 text-sm">자주 묻는 질문 (FAQ)</span>
+                </div>
+                <i class="fas fa-chevron-right text-gray-300 group-hover:text-gray-500 transition-colors"></i>
+            </a> -->
+
+            <!-- 인스타그램 스타일 갤러리 프리뷰 (추가 요소) -->
+            <!-- <div class="mt-6">
+                <div class="flex justify-between items-end mb-3 px-1">
+                    <h3 class="font-bold text-gray-800 text-sm">Instagram Feed</h3>
+                    <span class="text-xs text-gray-400">@zipjoong_official</span>
+                </div>
+                <div class="grid grid-cols-3 gap-2">
+                    <div class="aspect-square bg-gray-300 rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" class="w-full h-full object-cover hover:opacity-90 transition-opacity">
+                    </div>
+                    <div class="aspect-square bg-gray-300 rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" class="w-full h-full object-cover hover:opacity-90 transition-opacity">
+                    </div>
+                    <div class="aspect-square bg-gray-300 rounded-lg overflow-hidden cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" class="w-full h-full object-cover hover:opacity-90 transition-opacity">
+                    </div>
+                </div>
+            </div> -->
+
+        </main>
+
+        <!-- 푸터 -->
+        <footer class="py-6 text-center">
+            <p class="text-[10px] text-gray-400">
+                © 2026 Zipjoong. All rights reserved.<br>
+                <!-- Powered by Inpock Style -->
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
